@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label('python')
+        python {image 'oliverp83/python-jenkins-agent'}
     }
     stages {
         stage ('Test') {
