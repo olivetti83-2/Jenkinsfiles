@@ -3,14 +3,14 @@ pipeline {
         label('python')
     }
     stages {
-        stage('Test') {
+        stage ('Test') {
             steps {
                 sh 'echo Aloha!!!!!'
             }
         }
-        stage('Is there any python?') {
+        stage ('Is there any python?') {
             steps {
-                sh('python3 --version')
+                sh 'python3 --version'
             }
         }
     }
