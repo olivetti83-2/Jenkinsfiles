@@ -10,7 +10,7 @@ pipeline {
         }
         stage ('Is there any python?') {
             steps {
-                sh 'ls'
+                sh 'python3 --version'
             }
         }
     }
