@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'python'
+        label 'python3'
     }
     stages {
         stage ('Test') {
@@ -10,7 +10,7 @@ pipeline {
         }
         stage ('Is there any python?') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
     }
