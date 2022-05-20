@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Is there any python?') {
             steps {
-                sh 'curl https://www.google.com'
+                sh 'python --version'
             }
         }
     }
