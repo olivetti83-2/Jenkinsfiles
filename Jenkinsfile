@@ -1,5 +1,5 @@
 node {
     stage('Is there python?') {
-        sh 'python --version'
+        sh 'python3 --version'
     }
 }
