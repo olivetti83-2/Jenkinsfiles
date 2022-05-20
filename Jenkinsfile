@@ -1,5 +1,5 @@
 node {
-    stage('Say Aloha'){
-        echo 'Aloha Mundo!!!!'
+    stage('Is there python?') {
+        sh 'python --version'
     }
 }
