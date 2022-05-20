@@ -8,7 +8,7 @@ pipeline {
                 sh 'echo Aloha!!!!!'
             }
         }
-        stage ('Is there any python?') {
+        stage ('Is there any python?'), (args:'-u root:root') {
             steps {
                 sh 'python --version'
             }
