@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker{
             label 'python'
-            image 'oliverp83/python-jenkins-agent
+            image 'oliverp83/python-jenkins-agent'
         }
         
     }
