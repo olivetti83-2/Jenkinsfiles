@@ -1,0 +1,5 @@
+coloredlogs==15.0.1 #versionado semántico, versiones pineadas, para que cuando creemos el contenedor sea siempre el mismo, predictibilidad
+pytest==7.0.1
+coverage==6.3.2 #herramienta cobertura, librería python para anlizar cobertura, se integra con pytest y genera un reporte de cobertura
+build==0.7.0
+twine==3.8.0
