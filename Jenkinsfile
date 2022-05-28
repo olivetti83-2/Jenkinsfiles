@@ -2,6 +2,9 @@ pipeline {
     agent {
         label('python')
     }
+    enviroment {
+        PYPI_CREDENTIALS = credentials("pypi-credentials")
+    }
     stages {
         stage('Build') {
             steps {
@@ -34,7 +37,7 @@ pipeline {
          stage('Publish'){
             steps {
                 dir('python-app-example') {
-                    sh 'python -m twine upload dist/* --config-file ~/.pypirc --skip-existing'
+                    sh 'python -m twine upload dist/* -u $PYPI_CREDENTIALS_USR -p $PYPI_CREDENTIALS_PSW --skip-existing'
                 }
             }
         }
