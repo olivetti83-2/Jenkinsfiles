@@ -40,7 +40,7 @@ pipeline {
                     timeout(time: 10, unit: 'MINUTES'){
                         input message: 'Are you sure to deploy?', ok: 'Yes, deploy to pypi'
                             sh 'python -m twine upload dist/* -u $PYPI_CREDENTIALS_USR -p $PYPI_CREDENTIALS_PSW --skip-existing'
-                        }
+                        
                     }
                 }
             }
